@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="yahooTestCases.SignUpTestCases">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="SignUpToYahoo"/>
+        </methods>
+      </class> <!-- yahooTestCases.SignUpTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" parallel="classes" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="yahooTestCases.SignUpTestCases">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="SignUpToYahoo"/>
+        </methods>
+      </class> <!-- yahooTestCases.SignUpTestCases -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
