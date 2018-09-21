@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 21, 2018 04:20:04 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 21, 2018 05:42:07 PM</span>
 				</a>
 			</li>
 			<li>
@@ -131,7 +131,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>4</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -146,7 +146,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>8</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>8</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='30.769%'>16</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='69.231%'>36</span> others
 				</div>
 			</div>
 		</div>
@@ -164,14 +164,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Test case to verify that user is able to login into Yahoo mail.</span>
-						<span class='test-time'>Sep 21, 2018 04:20:04 PM</span>
+						<span class='test-time'>Sep 21, 2018 05:42:07 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 21, 2018 04:20:04 PM</span>
-	<span class='label end-time'>Sep 21, 2018 04:20:49 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 45s+330ms</span>
+	<span class='label start-time'>Sep 21, 2018 05:42:07 PM</span>
+	<span class='label end-time'>Sep 21, 2018 05:42:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+317ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -185,42 +185,75 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:20:08 PM</td>
+					<td class='timestamp'>5:42:11 PM</td>
 					<td class='step-details'>Launched <b>CHROME</b> browser.</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:20:17 PM</td>
+					<td class='timestamp'>5:42:15 PM</td>
 					<td class='step-details'>Navigated to url : <b>https://login.yahoo.com/</b></td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:20:43 PM</td>
-					<td class='step-details'>Clicked on : <b>Sign up link</b></td>
+					<td class='timestamp'>5:42:17 PM</td>
+					<td class='step-details'>Clicked on : <b>Sign up button.</b></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:17 PM</td>
+					<td class='step-details'>Entered : testName1 in First Name Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:17 PM</td>
+					<td class='step-details'>Entered : testLName1 in Last Name Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:17 PM</td>
+					<td class='step-details'>Entered : testMail1 in Email Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:17 PM</td>
+					<td class='step-details'>Entered : qwerty1 in Password Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:17 PM</td>
+					<td class='step-details'>Entered : 30 in Date of birth</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:20:43 PM</td>
+					<td class='timestamp'>5:42:17 PM</td>
 					<td class='step-details'>Test case method : SignUpToYahoo Failed.</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:20:43 PM</td>
-					<td class='step-details'>Exception Message : java.lang.AssertionError: null</td>
+					<td class='timestamp'>5:42:17 PM</td>
+					<td class='step-details'>Exception Message : org.openqa.selenium.NoSuchElementException: Cannot locate option with value: March
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SHASHWAT', ip: '192.168.11.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'
+Driver info: driver.version: unknown</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:20:49 PM</td>
-					<td class='step-details'>Details<img data-featherlight='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\src\main\resources\screenShots\screenShot20180921042043.png' width='10%' src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\src\main\resources\screenShots\screenShot20180921042043.png' data-src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\src\main\resources\screenShots\screenShot20180921042043.png'></td>
+					<td class='timestamp'>5:42:18 PM</td>
+					<td class='step-details'>Details<img data-featherlight='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054217.png' width='10%' src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054217.png' data-src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054217.png'></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:20:49 PM</td>
-					<td class='step-details'>Test case method : SignUpToYahoo Failed.java.lang.AssertionError: null</td>
+					<td class='timestamp'>5:42:18 PM</td>
+					<td class='step-details'>Test case method : SignUpToYahoo Failed.org.openqa.selenium.NoSuchElementException: Cannot locate option with value: March
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SHASHWAT', ip: '192.168.11.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'
+Driver info: driver.version: unknown</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:20:49 PM</td>
+					<td class='timestamp'>5:42:18 PM</td>
 					<td class='step-details'>Closed browser</td>
 				</tr>
 			</tbody>
@@ -233,14 +266,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Test case to verify that user is able to login into Yahoo mail.</span>
-						<span class='test-time'>Sep 21, 2018 04:20:50 PM</span>
+						<span class='test-time'>Sep 21, 2018 05:42:19 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 21, 2018 04:20:50 PM</span>
-	<span class='label end-time'>Sep 21, 2018 04:21:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+689ms</span>
+	<span class='label start-time'>Sep 21, 2018 05:42:19 PM</span>
+	<span class='label end-time'>Sep 21, 2018 05:42:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+452ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -254,42 +287,279 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:20:53 PM</td>
-					<td class='step-details'>Launched <b>FIREFOX</b> browser.</td>
+					<td class='timestamp'>5:42:22 PM</td>
+					<td class='step-details'>Launched <b>CHROME</b> browser.</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:20:59 PM</td>
+					<td class='timestamp'>5:42:26 PM</td>
 					<td class='step-details'>Navigated to url : <b>https://login.yahoo.com/</b></td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:21:01 PM</td>
-					<td class='step-details'>Clicked on : <b>Sign up link</b></td>
+					<td class='timestamp'>5:42:27 PM</td>
+					<td class='step-details'>Clicked on : <b>Sign up button.</b></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:27 PM</td>
+					<td class='step-details'>Entered : testName2 in First Name Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:28 PM</td>
+					<td class='step-details'>Entered : testLName2 in Last Name Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:28 PM</td>
+					<td class='step-details'>Entered : testMail2 in Email Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:28 PM</td>
+					<td class='step-details'>Entered : qwerty2 in Password Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:28 PM</td>
+					<td class='step-details'>Entered : 30 in Date of birth</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:21:01 PM</td>
+					<td class='timestamp'>5:42:28 PM</td>
 					<td class='step-details'>Test case method : SignUpToYahoo Failed.</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:21:01 PM</td>
-					<td class='step-details'>Exception Message : java.lang.AssertionError: null</td>
+					<td class='timestamp'>5:42:28 PM</td>
+					<td class='step-details'>Exception Message : org.openqa.selenium.NoSuchElementException: Cannot locate option with value: May
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SHASHWAT', ip: '192.168.11.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'
+Driver info: driver.version: unknown</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:21:01 PM</td>
-					<td class='step-details'>Details<img data-featherlight='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\src\main\resources\screenShots\screenShot20180921042101.png' width='10%' src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\src\main\resources\screenShots\screenShot20180921042101.png' data-src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\src\main\resources\screenShots\screenShot20180921042101.png'></td>
+					<td class='timestamp'>5:42:28 PM</td>
+					<td class='step-details'>Details<img data-featherlight='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054228.png' width='10%' src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054228.png' data-src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054228.png'></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:21:01 PM</td>
-					<td class='step-details'>Test case method : SignUpToYahoo Failed.java.lang.AssertionError: null</td>
+					<td class='timestamp'>5:42:28 PM</td>
+					<td class='step-details'>Test case method : SignUpToYahoo Failed.org.openqa.selenium.NoSuchElementException: Cannot locate option with value: May
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SHASHWAT', ip: '192.168.11.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'
+Driver info: driver.version: unknown</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:21:02 PM</td>
+					<td class='timestamp'>5:42:29 PM</td>
+					<td class='step-details'>Closed browser</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Test case to verify that user is able to login into Yahoo mail.</span>
+						<span class='test-time'>Sep 21, 2018 05:42:29 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 21, 2018 05:42:29 PM</span>
+	<span class='label end-time'>Sep 21, 2018 05:42:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+878ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:32 PM</td>
+					<td class='step-details'>Launched <b>CHROME</b> browser.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:36 PM</td>
+					<td class='step-details'>Navigated to url : <b>https://login.yahoo.com/</b></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:37 PM</td>
+					<td class='step-details'>Clicked on : <b>Sign up button.</b></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:37 PM</td>
+					<td class='step-details'>Entered : testName3 in First Name Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:37 PM</td>
+					<td class='step-details'>Entered : testLName3 in Last Name Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:38 PM</td>
+					<td class='step-details'>Entered : testMail3 in Email Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:38 PM</td>
+					<td class='step-details'>Entered : qwerty3 in Password Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:38 PM</td>
+					<td class='step-details'>Entered : 30 in Date of birth</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>5:42:43 PM</td>
+					<td class='step-details'>Test case method : SignUpToYahoo Failed.</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>5:42:43 PM</td>
+					<td class='step-details'>Exception Message : org.openqa.selenium.NoSuchElementException: Cannot locate option with value: March
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SHASHWAT', ip: '192.168.11.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'
+Driver info: driver.version: unknown</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>5:42:43 PM</td>
+					<td class='step-details'>Details<img data-featherlight='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054243.png' width='10%' src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054243.png' data-src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054243.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>5:42:43 PM</td>
+					<td class='step-details'>Test case method : SignUpToYahoo Failed.org.openqa.selenium.NoSuchElementException: Cannot locate option with value: March
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SHASHWAT', ip: '192.168.11.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'
+Driver info: driver.version: unknown</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:44 PM</td>
+					<td class='step-details'>Closed browser</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Test case to verify that user is able to login into Yahoo mail.</span>
+						<span class='test-time'>Sep 21, 2018 05:42:44 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 21, 2018 05:42:44 PM</span>
+	<span class='label end-time'>Sep 21, 2018 05:42:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+422ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:47 PM</td>
+					<td class='step-details'>Launched <b>CHROME</b> browser.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:51 PM</td>
+					<td class='step-details'>Navigated to url : <b>https://login.yahoo.com/</b></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:53 PM</td>
+					<td class='step-details'>Clicked on : <b>Sign up button.</b></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:53 PM</td>
+					<td class='step-details'>Entered : testName4 in First Name Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:53 PM</td>
+					<td class='step-details'>Entered : testLName4 in Last Name Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:53 PM</td>
+					<td class='step-details'>Entered : testMail4 in Email Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:53 PM</td>
+					<td class='step-details'>Entered : qwerty4 in Password Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:53 PM</td>
+					<td class='step-details'>Entered : 30 in Date of birth</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>5:42:53 PM</td>
+					<td class='step-details'>Test case method : SignUpToYahoo Failed.</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>5:42:53 PM</td>
+					<td class='step-details'>Exception Message : org.openqa.selenium.NoSuchElementException: Cannot locate option with value: April
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SHASHWAT', ip: '192.168.11.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'
+Driver info: driver.version: unknown</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>5:42:54 PM</td>
+					<td class='step-details'>Details<img data-featherlight='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054253.png' width='10%' src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054253.png' data-src='C:\Users\Shashwat Chadha\eclipse-workspace\YahooMail\screenShot20180921054253.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>5:42:54 PM</td>
+					<td class='step-details'>Test case method : SignUpToYahoo Failed.org.openqa.selenium.NoSuchElementException: Cannot locate option with value: April
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SHASHWAT', ip: '192.168.11.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'
+Driver info: driver.version: unknown</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:55 PM</td>
 					<td class='step-details'>Closed browser</td>
 				</tr>
 			</tbody>
@@ -332,31 +602,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>16</div>
+					<div class='panel-lead'>52</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 21, 2018 04:20:04 PM</div>
+					<div class='panel-lead'>Sep 21, 2018 05:42:07 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 21, 2018 04:21:02 PM</div>
+			 		<div class='panel-lead'>Sep 21, 2018 05:42:55 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 58s+528ms</div>
+					<div class='panel-lead'>0h 0m 47s+900ms</div>
 				</div>
 			</div>
 		</div>
@@ -370,21 +640,21 @@
 		<script>
 			var statusGroup = {
 				passParent: 0,
-				failParent: 2,
+				failParent: 4,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 4,
 				
 				passChild: 0,
-				failChild: 8,
+				failChild: 16,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 8,
-				exceptionsChild: 8,
+				infoChild: 36,
+				exceptionsChild: 16,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

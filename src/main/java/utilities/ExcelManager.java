@@ -9,6 +9,7 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.formula.functions.Column;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 
 
@@ -85,6 +86,8 @@ this.sheetName=sheetName;
 		sheet = workbook.getSheet(sheetName);
 		row = sheet.getRow(rowNumber);
 		cell = row.getCell(columnNumber);
+		if(cell.getCellTypeEnum()==CellType.NUMERIC)
+			return String.valueOf(cell.getNumericCellValue());
 		return cell.getStringCellValue();
 
 	}

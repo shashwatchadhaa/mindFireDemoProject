@@ -1,5 +1,6 @@
 package utilities;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 
@@ -9,8 +10,6 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-
-import baseSetup.DriverManager;
 
 public class Listners implements ITestListener {
 
@@ -36,11 +35,12 @@ public class Listners implements ITestListener {
 			
 			Utility.captureScreenShot();
 		try {
-			
+			ExtentReport.getTest().fail("Details", MediaEntityBuilder.createScreenCaptureFromPath(Paths.get(Utility.getScreenShotPath()).toAbsolutePath().toString()).build());
 			
 		//	test.fail("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
-			ExtentReport.getTest().fail("Details", MediaEntityBuilder.createScreenCaptureFromPath(Utility.getScreenShotPath()).build());
-			//ExtentReport.getTest().fail("Fail").addScreenCaptureFromPath(Utility.getScreenShotPath());
+			//ExtentReport.getTest().fail("Details", MediaEntityBuilder.createScreenCaptureFromPath(Utility.getScreenShotPath()).build());
+		//	File file = new File(Utility.getScreenShotPath());
+		//	ExtentReport.getTest().fail("Fail").addScreenCaptureFromPath(file.getAbsolutePath());
 						//ExtentReport.getTest().addScreencastFromPath(Utility.getScreenShotPath());
 			
 		} catch (IOException e) {

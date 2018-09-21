@@ -1,27 +1,33 @@
 package yahooTestCases;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
+import java.util.HashMap;
+
 import org.testng.annotations.Test;
 
 import baseSetup.TestBase;
-import utilities.Utility;
+import pages.yahooMail.LoginPage;
+import pages.yahooMail.YahooMailSignUpPage;
 public class SignUpTestCases extends TestBase{
 	
 	
 	
 	
 	
+	private YahooMailSignUpPage signUpPage ;
+	private LoginPage loginObj;
 	
 	
 	
-	
-	@Test
-	public void SignUpToYahoo()
-	{
-		Utility.clickElement(By.id("createacc"), "Sign up link");
-	Assert.fail();
-	
+	@Test(dataProvider="getData",dataProviderClass=utilities.Utility.class)
+	public void SignUpToYahoo(HashMap<String, String> dataMap)
+	{loginObj = new LoginPage();
+		signUpPage = loginObj.clickOnSignUp();
+		signUpPage.setName(dataMap.get("firstName"), dataMap.get("lastName"));
+		signUpPage.setEmail(dataMap.get("email"),dataMap.get("password"));
+		signUpPage.setDOB(dataMap.get("dob"));
+		signUpPage.setPhoneNumber(Long.parseLong(dataMap.get("phone")));
+		signUpPage.clickContinue();
+
 	}
 	
 	

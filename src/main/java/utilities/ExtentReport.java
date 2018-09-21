@@ -44,7 +44,10 @@ public class ExtentReport {
 	
 	
 	
-	
+	public static void createNode(ExtentTest test,String nodeName)
+	{
+		test.createNode(nodeName);
+	}
 	
 	public static void logInReport(Status status,String description)
 	{
