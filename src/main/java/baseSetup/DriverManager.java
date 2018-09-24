@@ -66,7 +66,7 @@ public class DriverManager {
 	public static void quitBrowser()
 	{
 		getDriver().quit();
-		driver = null;
+	
 		ExtentReport.logInReport(Status.INFO,"Closed browser");
 	}
 	

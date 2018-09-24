@@ -9,10 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">26,806</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,488</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">amazonTestCases.AddItemToCart</td><td><a href="#m0">addItemToCartAndVerify</a></td><td rowspan="1">1537782976430</td><td rowspan="1">20084</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">amazonTestCases.AddItemToCart</td><td><a href="#m0">addItemToCartAndVerify</a></td><td rowspan="1">1537792258181</td><td rowspan="1">23858</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">amazonTestCases.AddItemToCart#addItemToCartAndVerify</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">amazonTestCases.AddItemToCart#addItemToCartAndVerify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Page is not loaded.
+	at pages.PageBase.waitForPageLoad(PageBase.java:26)
+	at pages.amazon.HomePage.&lt;init&gt;(HomePage.java:30)
+	at pages.amazon.HomePage.navigateToHomePage(HomePage.java:37)
+	at amazonTestCases.AddItemToCart.addItemToCartAndVerify(AddItemToCart.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

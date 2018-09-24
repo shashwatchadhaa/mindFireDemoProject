@@ -18,10 +18,10 @@ public class ExtentReport {
 	
 	private static ExtentReports extent;
 	private static ExtentHtmlReporter extentHtmlReporter;
-	private static String filePath = System.getProperty("user.dir")+"\\test-output\\extentreport\\report.html";
+	private static String filePath = "./extentreport/report.html";
 	
+	private static ThreadLocal<ExtentTest>  test = new ThreadLocal<ExtentTest>();
 	
-	private static 	ExtentTest test;
 	
 	
 	public static void startExtent()
@@ -39,7 +39,8 @@ public class ExtentReport {
 	
 	public static void createTest(String testName,String description)
 	{
-	test = extent.createTest(testName, description);
+	
+	test.set(extent.createTest(testName, description));
 	}
 	
 	
@@ -51,13 +52,13 @@ public class ExtentReport {
 	
 	public static void logInReport(Status status,String description)
 	{
-		test.log(status, description);
+		getTest().log(status, description);
 	}
 	
 	
 	public static ExtentTest getTest()
 	{
-		return test;
+		return test.get();
 	}
 	
 	public static void  flushReport()

@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" name="Test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="2" name="Test(failed)" parallel="methods">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="base"/>
-        <include name="amazon"/>
-      </run>
-    </groups>
     <classes>
-      <class name="yahooTestCases.SignUpTestCases">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="demoTest"/>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="afterSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="SignUpToYahoo" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- yahooTestCases.SignUpTestCases -->
       <class name="amazonTestCases.AddItemToCart">
         <methods>
           <include name="beforeClass"/>

@@ -57,7 +57,8 @@ public class Listners implements ITestListener {
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		System.out.println(result.getMethod());
+		System.out.println(result.getStatus());
+		System.out.println(result.getName());
 		System.out.println("On test skip");
 		
 	}

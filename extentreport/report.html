@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 24, 2018 03:59:27 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 24, 2018 06:00:53 PM</span>
 				</a>
 			</li>
 			<li>
@@ -77,6 +77,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -127,10 +128,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -145,7 +146,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>4</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='40%'>6</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='60%'>9</span> others
 				</div>
 			</div>
 		</div>
@@ -160,17 +161,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Add item to card and verify.</span>
-						<span class='test-time'>Sep 24, 2018 03:59:27 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Sep 24, 2018 06:00:53 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 24, 2018 03:59:27 PM</span>
-	<span class='label end-time'>Sep 24, 2018 03:59:49 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+438ms</span>
+	<span class='label start-time'>Sep 24, 2018 06:00:53 PM</span>
+	<span class='label end-time'>Sep 24, 2018 06:01:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 29s+903ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -184,23 +185,115 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:59:32 PM</td>
+					<td class='timestamp'>6:00:58 PM</td>
 					<td class='step-details'>Launched <b>CHROME</b> browser.</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:59:40 PM</td>
+					<td class='timestamp'>6:01:06 PM</td>
 					<td class='step-details'>Navigated to url : <b>https://www.amazon.in/</b></td>
 				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:59:45 PM</td>
-					<td class='step-details'>Entered : kindle in Search textbox</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:01:22 PM</td>
+					<td class='step-details'>Test case method : addItemToCartAndVerify Failed.</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:01:22 PM</td>
+					<td class='step-details'>Exception Message : java.lang.AssertionError: Page is not loaded.</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:01:22 PM</td>
+					<td class='step-details'>Details<img data-featherlight='.\screenShot20180924060122.png' width='10%' src='.\screenShot20180924060122.png' data-src='.\screenShot20180924060122.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:01:22 PM</td>
+					<td class='step-details'>Test case method : addItemToCartAndVerify Failed.java.lang.AssertionError: Page is not loaded.</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:59:49 PM</td>
+					<td class='timestamp'>6:01:23 PM</td>
 					<td class='step-details'>Closed browser</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Test case to verify that user is able to login into Yahoo mail.</span>
+						<span class='test-time'>Sep 24, 2018 06:00:53 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 24, 2018 06:00:53 PM</span>
+	<span class='label end-time'>Sep 24, 2018 06:01:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 29s+103ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:00:58 PM</td>
+					<td class='step-details'>Launched <b>CHROME</b> browser.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:01:10 PM</td>
+					<td class='step-details'>Navigated to url : <b>https://login.yahoo.com/</b></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:01:16 PM</td>
+					<td class='step-details'>Clicked on : <b>Sign up button.</b></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:01:16 PM</td>
+					<td class='step-details'>Entered : testName1 in First Name Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:01:16 PM</td>
+					<td class='step-details'>Entered : testLName1 in Last Name Textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:01:16 PM</td>
+					<td class='step-details'>Entered : testMail1 in Email Textbox</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:01:23 PM</td>
+					<td class='step-details'>Test case method : SignUpToYahoo Failed.</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:01:23 PM</td>
+					<td class='step-details'>Exception Message : org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SHASHWAT', ip: '192.168.11.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\SHASHW~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57638}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 9478c18c8baa2e6f98c6c5d17f385d96
+*** Element info: {Using=id, value=usernamereg-password}</td>
 				</tr>
 			</tbody>
 		</table>
@@ -242,31 +335,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 24, 2018 03:59:27 PM</div>
+					<div class='panel-lead'>Sep 24, 2018 06:00:53 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 24, 2018 03:59:49 PM</div>
+			 		<div class='panel-lead'>Sep 24, 2018 06:01:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 21s+551ms</div>
+					<div class='panel-lead'>0h 0m 30s+29ms</div>
 				</div>
 			</div>
 		</div>
@@ -279,22 +372,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 2,
 				
 				passChild: 0,
-				failChild: 0,
+				failChild: 6,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 4,
-				exceptionsChild: 0,
+				infoChild: 9,
+				exceptionsChild: 6,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

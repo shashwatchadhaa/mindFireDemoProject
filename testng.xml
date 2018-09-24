@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="none" thread-count="1">
+<suite name="Suite" parallel="methods" thread-count="2">
 
   <test  name="Test">
   <parameter name="browser" value="chrome"></parameter>
@@ -9,14 +9,12 @@
  
   
 	
-
-
     <classes>
        
       
-    
-   <class name="amazonTestCases.AddItemToCart"/>
-     
+    <class name="amazonTestCases.AddItemToCart"/>
+   
+     <class name="yahooTestCases.SignUpTestCases"/>
     </classes>
   </test> <!-- Test -->
 

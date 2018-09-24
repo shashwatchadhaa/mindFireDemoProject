@@ -64,14 +64,15 @@ public class Utility {
 		 String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot screenShot =((TakesScreenshot)DriverManager.getDriver());
 	    File SrcFile=screenShot.getScreenshotAs(OutputType.FILE);
-	 //   screenShotPath = System.getProperty("user.dir")+"\\"+"screenShot"+date+".png";
-	    screenShotPath = System.getProperty("user.dir")+"\\test-output\\extentreport\\screenShot\\"+date+".png";
+	 screenShotPath = "./extentreport/screenShot"+date+".png";
+	 //   screenShotPath = System.getProperty("user.dir")+"\\test-output\\extentreport\\screenShot\\"+date+".png";
 	    File finalDestination = new File(screenShotPath);
 	    try {
 			FileUtils.copyFile(SrcFile, finalDestination);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	    screenShotPath = "./screenShot"+date+".png";
 	}
 	
 	

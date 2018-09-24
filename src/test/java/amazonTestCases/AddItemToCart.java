@@ -1,5 +1,6 @@
 package amazonTestCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import baseSetup.TestBase;
@@ -18,21 +19,15 @@ public class AddItemToCart extends TestBase{
 	
 	
 	
-	@Test(groups= {"amazon"})
+	@Test()
 	public void addItemToCartAndVerify()
 	{
 		HomePage homePageObj = HomePage.navigateToHomePage();
 		homePageObj.setSearchBar("kindle");
-	System.out.println("test");
+
 	}
 	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 	
