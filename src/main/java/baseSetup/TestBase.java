@@ -12,12 +12,13 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import utilities.ExcelManager;
 import utilities.ExtentReport;
 import utilities.PropertiesFileManager;
 
-
+@Test(groups= {("base")})
 @Listeners(utilities.Listners.class)
 public class TestBase {
 
@@ -68,7 +69,8 @@ public class TestBase {
 	{
 		ExtentReport.createTest(PropertiesFileManager.getTestCaseProperty(method.getName()), "");
 		DriverManager.launchBrowser();
-		DriverManager.navigateTo(PropertiesFileManager.getConfigProperty("url"));
+		
+		
 	}
 	
 	@AfterMethod

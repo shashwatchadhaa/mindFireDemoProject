@@ -11,7 +11,9 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 
 import com.aventstack.extentreports.Status;
@@ -29,6 +31,7 @@ public class Utility {
 	{
 		
 		DriverManager.getDriver().findElement(locator).click();
+		if(name!="")
 		ExtentReport.logInReport(Status.INFO, "Clicked on : <b>"+name+"</b>");
 	
 		
@@ -44,7 +47,7 @@ public class Utility {
 	public static void selectValue(By locator,String value)
 	{
 		Select select = new Select(DriverManager.getDriver().findElement(locator));
-		select.selectByValue(value);
+		select.selectByVisibleText(value);
 		ExtentReport.logInReport(Status.INFO, "Selected : "+value+ " from dropdown.");
 	}
 	
@@ -52,8 +55,6 @@ public class Utility {
 	
 	
     
-
-
 	
 	
 	
@@ -63,7 +64,8 @@ public class Utility {
 		 String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot screenShot =((TakesScreenshot)DriverManager.getDriver());
 	    File SrcFile=screenShot.getScreenshotAs(OutputType.FILE);
-	    screenShotPath = System.getProperty("user.dir")+"\\"+"screenShot"+date+".png";
+	 //   screenShotPath = System.getProperty("user.dir")+"\\"+"screenShot"+date+".png";
+	    screenShotPath = System.getProperty("user.dir")+"\\test-output\\extentreport\\screenShot\\"+date+".png";
 	    File finalDestination = new File(screenShotPath);
 	    try {
 			FileUtils.copyFile(SrcFile, finalDestination);
@@ -74,26 +76,7 @@ public class Utility {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 

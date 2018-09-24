@@ -18,7 +18,7 @@ public class ExtentReport {
 	
 	private static ExtentReports extent;
 	private static ExtentHtmlReporter extentHtmlReporter;
-	private static String filePath = "report.htlm";
+	private static String filePath = System.getProperty("user.dir")+"\\test-output\\extentreport\\report.html";
 	
 	
 	private static 	ExtentTest test;

@@ -35,7 +35,13 @@ public class Listners implements ITestListener {
 			
 			Utility.captureScreenShot();
 		try {
-			ExtentReport.getTest().fail("Details", MediaEntityBuilder.createScreenCaptureFromPath(Paths.get(Utility.getScreenShotPath()).toAbsolutePath().toString()).build());
+			
+			
+			
+			
+			//ExtentReport.getTest().fail("Test failed.").addScreenCaptureFromPath(Utility.getScreenShotPath());
+			
+			ExtentReport.getTest().fail("Details", MediaEntityBuilder.createScreenCaptureFromPath(Paths.get(Utility.getScreenShotPath()).toString()).build());
 			
 		//	test.fail("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
 			//ExtentReport.getTest().fail("Details", MediaEntityBuilder.createScreenCaptureFromPath(Utility.getScreenShotPath()).build());
