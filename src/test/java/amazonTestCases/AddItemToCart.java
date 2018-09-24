@@ -23,7 +23,7 @@ public class AddItemToCart extends TestBase{
 	{
 		HomePage homePageObj = HomePage.navigateToHomePage();
 		homePageObj.setSearchBar("kindle");
-	
+	System.out.println("test");
 	}
 	
 	
