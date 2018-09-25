@@ -38,7 +38,7 @@ public class TestBase {
 		PropertiesFileManager.loadConfigProperties();
 		ExtentReport.startExtent();
 
-	}
+	}fggfsd
 
 	@BeforeTest
 	public void beforeTest() {
