@@ -2,7 +2,7 @@ package pages.yahooMail;
 
 import org.openqa.selenium.By;
 
-import utilities.Utility;
+import testUtils.Utility;
 
 public class LoginPage {
 	

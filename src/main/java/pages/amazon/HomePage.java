@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import baseSetup.DriverManager;
 import pages.PageBase;
-import utilities.PropertiesFileManager;
-import utilities.Utility;
+import testUtils.PropertiesFileManager;
+import testUtils.Utility;
 
 public class HomePage extends PageBase{
 

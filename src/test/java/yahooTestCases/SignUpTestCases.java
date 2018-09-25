@@ -8,8 +8,8 @@ import baseSetup.DriverManager;
 import baseSetup.TestBase;
 import pages.yahooMail.LoginPage;
 import pages.yahooMail.YahooMailSignUpPage;
-import utilities.PropertiesFileManager;
-import utilities.Utility;
+import testUtils.PropertiesFileManager;
+import testUtils.Utility;
 
 public class SignUpTestCases extends TestBase {
 

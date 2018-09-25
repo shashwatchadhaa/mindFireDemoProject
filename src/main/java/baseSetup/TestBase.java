@@ -12,13 +12,14 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
-import utilities.ExcelManager;
-import utilities.ExtentReport;
-import utilities.PropertiesFileManager;
+import testUtils.ExcelManager;
+import testUtils.ExtentReport;
+import testUtils.PropertiesFileManager;
 
-@Listeners(utilities.Listners.class)
+
+
+@Listeners(testUtils.Listners.class)
 public class TestBase {
 
 	private String excelFilePath = System.getProperty("user.dir") + "\\src\\main\\resources\\testData\\TestData.xls";

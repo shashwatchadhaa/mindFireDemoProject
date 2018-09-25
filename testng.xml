@@ -12,9 +12,10 @@
     <classes>
        
       
-    <class name="amazonTestCases.AddItemToCart"/>
-   
      <class name="yahooTestCases.SignUpTestCases"/>
+   
+    <class name="amazonTestCases.AddItemToCart"/>
+    
     </classes>
   </test> <!-- Test -->
 

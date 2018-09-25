@@ -3,7 +3,7 @@ package rough;
 import java.io.IOException;
 
 import baseSetup.DriverManager;
-import utilities.Utility;
+import testUtils.Utility;
 
 public class RoughClass {
 

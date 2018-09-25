@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import baseSetup.DriverManager;
 import pages.PageBase;
-import utilities.Utility;
+import testUtils.Utility;
 
 public class YahooMailSignUpPage extends PageBase {
 	

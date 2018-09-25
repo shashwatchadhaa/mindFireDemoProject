@@ -6,14 +6,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.aventstack.extentreports.Status;
 
-import utilities.ExtentReport;
+import testUtils.ExtentReport;
+
 
 public class DriverManager {
 
 	private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<WebDriver>();
 
-	private static WebDriver driver;
-	
+		
 	private static String browser;
 	private static String driverPath=System.getProperty("user.dir")+"\\src\\main\\resources\\drivers\\";
 
@@ -39,8 +39,9 @@ public class DriverManager {
 	public static void launchBrowser() {
 
 		
-		
-		if(driver == null) {
+	 WebDriver driver=null;
+
+	
 		
 		
 		if(browser.equalsIgnoreCase("chrome")) {
@@ -55,7 +56,7 @@ public class DriverManager {
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			setThreadDriver(driver);
-		}
+		
 
 		}
 		ExtentReport.logInReport(Status.INFO, "Launched <b>"+browser.toUpperCase()+"</b> browser.");

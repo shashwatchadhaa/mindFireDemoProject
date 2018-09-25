@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 
 import baseSetup.TestBase;
-import utilities.Utility;
+import testUtils.Utility;
 
 public class RoughTestCase extends TestBase {
 	
