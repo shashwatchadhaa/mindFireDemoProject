@@ -38,11 +38,12 @@ public class HomePage extends PageBase{
 		
 	}
 	
-	public void setSearchBar(String searchItem)
+	public SearchItemPage setSearchBar(String searchItem)
 	{
 		Utility.setData(searchBar,searchItem, "Search textbox");
 		DriverManager.getDriver().findElement(searchBar).sendKeys(Keys.ENTER);
-	}
+		return  new SearchItemPage(searchItem);
+		}
 
 	@Override
 	public ExpectedCondition<WebElement> pageLoadCondition() {

@@ -1,72 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20408" started-at="2018-09-25T05:32:53Z" finished-at="2018-09-25T05:33:14Z">
+  <suite name="Suite" duration-ms="22525" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20408" started-at="2018-09-25T05:32:53Z" finished-at="2018-09-25T05:33:14Z">
+    <test name="Test" duration-ms="22525" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:51Z">
       <class name="yahooTestCases.SignUpTestCases">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="beforeSuite" is-config="true" duration-ms="259" started-at="2018-09-25T05:32:53Z" finished-at="2018-09-25T05:32:53Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="beforeSuite" is-config="true" duration-ms="249" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-09-25T05:32:53Z" finished-at="2018-09-25T05:32:53Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="beforeClass" is-config="true" duration-ms="8" started-at="2018-09-25T05:32:53Z" finished-at="2018-09-25T05:32:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="beforeMethod" is-config="true" duration-ms="4168" started-at="2018-09-25T05:32:53Z" finished-at="2018-09-25T05:32:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void yahooTestCases.SignUpTestCases.SignUpToYahoo(java.util.HashMap)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="SignUpToYahoo(java.util.HashMap)[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="SignUpToYahoo" duration-ms="13351" started-at="2018-09-25T05:32:58Z" data-provider="getData" finished-at="2018-09-25T05:33:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstName=testName1, lastName=testLName1, password=Testing2018#, phone=9874637281, dob=30/March/2000, email=testMail1}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SignUpToYahoo -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="afterMethod" is-config="true" duration-ms="1607" started-at="2018-09-25T05:33:11Z" finished-at="2018-09-25T05:33:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-09-25T05:33:13Z" finished-at="2018-09-25T05:33:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-09-25T05:33:14Z" finished-at="2018-09-25T05:33:14Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-25T09:54:51Z" finished-at="2018-09-25T09:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-09-25T05:33:14Z" finished-at="2018-09-25T05:33:14Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-09-25T09:54:51Z" finished-at="2018-09-25T09:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- yahooTestCases.SignUpTestCases -->
       <class name="amazonTestCases.AddItemToCart">
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="beforeClass" is-config="true" duration-ms="7" started-at="2018-09-25T05:32:53Z" finished-at="2018-09-25T05:32:53Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="beforeClass" is-config="true" duration-ms="10" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:28Z">
           <params>
             <param index="0">
               <value>
@@ -77,7 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="beforeMethod" is-config="true" duration-ms="4628" started-at="2018-09-25T05:32:53Z" finished-at="2018-09-25T05:32:58Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="beforeMethod" is-config="true" duration-ms="4141" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:33Z">
           <params>
             <param index="0">
               <value>
@@ -88,15 +47,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addItemToCartAndVerify()[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="addItemToCartAndVerify" duration-ms="14864" started-at="2018-09-25T05:32:58Z" finished-at="2018-09-25T05:33:13Z">
+        <test-method status="PASS" signature="addItemToCartAndVerify()[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="addItemToCartAndVerify" duration-ms="17162" started-at="2018-09-25T09:54:33Z" finished-at="2018-09-25T09:54:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToCartAndVerify -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="afterMethod" is-config="true" duration-ms="880" started-at="2018-09-25T05:33:13Z" finished-at="2018-09-25T05:33:14Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="afterMethod" is-config="true" duration-ms="1180" started-at="2018-09-25T09:54:50Z" finished-at="2018-09-25T09:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-09-25T05:33:14Z" finished-at="2018-09-25T05:33:14Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-09-25T09:54:51Z" finished-at="2018-09-25T09:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

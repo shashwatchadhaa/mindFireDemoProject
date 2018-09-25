@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import baseSetup.TestBase;
 import pages.amazon.HomePage;
+import pages.amazon.SearchItemPage;
 
 public class AddItemToCart extends TestBase{
 	
@@ -23,7 +24,10 @@ public class AddItemToCart extends TestBase{
 	public void addItemToCartAndVerify()
 	{
 		HomePage homePageObj = HomePage.navigateToHomePage();
-		homePageObj.setSearchBar("kindle");
+		SearchItemPage searchPage = homePageObj.setSearchBar("Kindle");
+	
+		
+		
 
 	}
 	

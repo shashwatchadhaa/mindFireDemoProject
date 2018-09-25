@@ -38,7 +38,7 @@ public class TestBase {
 		PropertiesFileManager.loadConfigProperties();
 		ExtentReport.startExtent();
 
-	}fggfsd
+	}
 
 	@BeforeTest
 	public void beforeTest() {
@@ -49,10 +49,8 @@ public class TestBase {
 	@BeforeClass
 	public void beforeClass(String browser) {
 		DriverManager.setBrowser(browser);
-		System.out.println("before class" + browser);
+		
 	}
-
-	// PropertiesFileManager.getConfigProperty("browser")
 
 	@BeforeMethod
 	public synchronized void beforeMethod(Method method) {
