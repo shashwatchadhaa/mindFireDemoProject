@@ -1,65 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="22525" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:51Z">
+  <suite name="Suite" duration-ms="35802" started-at="2018-10-04T06:42:44Z" finished-at="2018-10-04T06:43:20Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="22525" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:51Z">
-      <class name="yahooTestCases.SignUpTestCases">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="beforeSuite" is-config="true" duration-ms="249" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:28Z">
+    <test name="Test" duration-ms="35802" started-at="2018-10-04T06:42:44Z" finished-at="2018-10-04T06:43:20Z">
+      <class name="flipkartTestcases.ProductRatingTestCase">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="beforeSuite" is-config="true" duration-ms="832" started-at="2018-10-04T06:42:43Z" finished-at="2018-10-04T06:42:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:28Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-10-04T06:42:44Z" finished-at="2018-10-04T06:42:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-25T09:54:51Z" finished-at="2018-09-25T09:54:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:yahooTestCases.SignUpTestCases@57baeedf]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-09-25T09:54:51Z" finished-at="2018-09-25T09:54:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- yahooTestCases.SignUpTestCases -->
-      <class name="amazonTestCases.AddItemToCart">
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="beforeClass" is-config="true" duration-ms="10" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="beforeClass" is-config="true" duration-ms="5" started-at="2018-10-04T06:42:44Z" finished-at="2018-10-04T06:42:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="beforeMethod" is-config="true" duration-ms="4141" started-at="2018-09-25T09:54:28Z" finished-at="2018-09-25T09:54:33Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="beforeMethod" is-config="true" duration-ms="7772" started-at="2018-10-04T06:42:44Z" finished-at="2018-10-04T06:42:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void amazonTestCases.AddItemToCart.addItemToCartAndVerify()]]>
+                <![CDATA[public void flipkartTestcases.ProductRatingTestCase.highestNumberRating()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addItemToCartAndVerify()[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="addItemToCartAndVerify" duration-ms="17162" started-at="2018-09-25T09:54:33Z" finished-at="2018-09-25T09:54:50Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="beforeMethod" is-config="true" duration-ms="4377" started-at="2018-10-04T06:42:44Z" finished-at="2018-10-04T06:42:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void flipkartTestcases.ProductRatingTestCase.getHighestRatedProduct(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addItemToCartAndVerify -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="afterMethod" is-config="true" duration-ms="1180" started-at="2018-09-25T09:54:50Z" finished-at="2018-09-25T09:54:51Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getHighestRatedProduct(java.lang.String)[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="getHighestRatedProduct" duration-ms="30488" started-at="2018-10-04T06:42:49Z" finished-at="2018-10-04T06:43:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[laptop bag]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHighestRatedProduct -->
+        <test-method status="PASS" signature="highestNumberRating()[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="highestNumberRating" duration-ms="17493" started-at="2018-10-04T06:42:52Z" finished-at="2018-10-04T06:43:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- highestNumberRating -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="afterMethod" is-config="true" duration-ms="1221" started-at="2018-10-04T06:43:09Z" finished-at="2018-10-04T06:43:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:amazonTestCases.AddItemToCart@343f4d3d]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-09-25T09:54:51Z" finished-at="2018-09-25T09:54:51Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="afterMethod" is-config="true" duration-ms="908" started-at="2018-10-04T06:43:19Z" finished-at="2018-10-04T06:43:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-10-04T06:43:20Z" finished-at="2018-10-04T06:43:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- amazonTestCases.AddItemToCart -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-10-04T06:43:20Z" finished-at="2018-10-04T06:43:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:flipkartTestcases.ProductRatingTestCase@548e7350]" name="afterSuite" is-config="true" duration-ms="2" started-at="2018-10-04T06:43:20Z" finished-at="2018-10-04T06:43:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- flipkartTestcases.ProductRatingTestCase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

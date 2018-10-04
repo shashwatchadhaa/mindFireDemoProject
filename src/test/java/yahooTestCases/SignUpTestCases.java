@@ -16,7 +16,7 @@ public class SignUpTestCases extends TestBase {
 	private YahooMailSignUpPage signUpPage;
 	private LoginPage loginObj;
 
-	@Test(dataProvider = "getData", dataProviderClass = Utility.class,enabled=false)
+	@Test(dataProvider = "getData", dataProviderClass = Utility.class,enabled=true)
 	public void SignUpToYahoo(HashMap<String, String> dataMap) {
 		DriverManager.navigateTo(PropertiesFileManager.getConfigProperty("url"));
 		loginObj = new LoginPage();

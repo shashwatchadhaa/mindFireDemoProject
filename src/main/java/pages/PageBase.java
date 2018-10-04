@@ -20,7 +20,7 @@ public abstract class PageBase {
 	WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), timeOutInSeconds);
 	wait.until(expectedCondition);
 		}
-		catch(TimeoutException e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 			Assert.fail("Page is not loaded.");

@@ -20,7 +20,7 @@ public class AddItemToCart extends TestBase{
 	
 	
 	
-	@Test()
+	@Test(enabled = false)
 	public void addItemToCartAndVerify()
 	{
 		HomePage homePageObj = HomePage.navigateToHomePage();

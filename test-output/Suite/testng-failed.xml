@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
-  <test thread-count="2" name="Test(failed)" parallel="methods">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="4" name="Test(failed)" parallel="methods">
+    <parameter name="searchedItem" value="laptop bag"/>
     <parameter name="browser" value="chrome"/>
+    <parameter name="searchKeyword" value="charger"/>
+    <parameter name="productAmazon" value="watch"/>
     <classes>
-      <class name="amazonTestCases.AddItemToCart">
+      <class name="googleTestCases.GoogleLinks">
         <methods>
           <include name="beforeClass"/>
-          <include name="addItemToCartAndVerify"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
           <include name="afterClass"/>
+          <include name="googleLinksScenario" invocation-numbers="0"/>
           <include name="afterSuite"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- amazonTestCases.AddItemToCart -->
+      </class> <!-- googleTestCases.GoogleLinks -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

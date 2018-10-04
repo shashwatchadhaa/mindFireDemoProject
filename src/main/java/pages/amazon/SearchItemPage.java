@@ -11,9 +11,9 @@ import testUtils.Utility;
 
 public class SearchItemPage extends PageBase {
 
-	By searchCount = By.cssSelector("#s-result-count");
+	private By searchCount = By.cssSelector("#s-result-count");
+	private By firstProduct = By.xpath("//li[@id='result_0']//a[contains(@class,'access')]");
 	String searchedItem;
-	
 
 	public SearchItemPage(String searchedItem) {
 		this.searchedItem = searchedItem;
@@ -25,8 +25,10 @@ public class SearchItemPage extends PageBase {
 		return ExpectedConditions.presenceOfElementLocated(searchCount);
 	}
 
-	
+	public ProductDetailPage selectFirstProduct()
+	{
+		Utility.clickElement(firstProduct, "First searched  product");
+		return new ProductDetailPage();
+	}
 
-	
-	
 }

@@ -20,9 +20,9 @@ public class HomePage extends PageBase{
 	
 	
 	
-	By searchBar = By.id("twotabsearchtextbox");
-	By amazonLogo = By.xpath("//span[contains(@class,'logo') and text()='Amazon']");
-	
+	private By searchBar = By.id("twotabsearchtextbox");
+	private By amazonLogo = By.xpath("//span[contains(@class,'logo') and text()='Amazon']");
+	public  static final String homeWindowHAndle=DriverManager.getDriver().getWindowHandle() ;
 	
 	
 	public HomePage()

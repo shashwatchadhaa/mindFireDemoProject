@@ -17,8 +17,6 @@ import testUtils.ExcelManager;
 import testUtils.ExtentReport;
 import testUtils.PropertiesFileManager;
 
-
-
 @Listeners(testUtils.Listners.class)
 public class TestBase {
 
@@ -37,6 +35,9 @@ public class TestBase {
 		PropertiesFileManager.loadTestCaseRepository();
 		PropertiesFileManager.loadConfigProperties();
 		ExtentReport.startExtent();
+		DatabaseManager.createConnection(PropertiesFileManager.getConfigProperty("dbUrl"),
+				PropertiesFileManager.getConfigProperty("username"),
+				PropertiesFileManager.getConfigProperty("password"));
 
 	}
 
@@ -45,11 +46,11 @@ public class TestBase {
 
 	}
 
-	@Parameters("browser")
+	// @Parameters("browser")
 	@BeforeClass
-	public void beforeClass(String browser) {
-		DriverManager.setBrowser(browser);
-		
+	public void beforeClass() {
+		DriverManager.setBrowser("chrome");
+
 	}
 
 	@BeforeMethod
@@ -80,7 +81,7 @@ public class TestBase {
 
 	@AfterSuite
 	public void afterSuite() {
-
+		DatabaseManager.closeConnection();
 	}
 
 }

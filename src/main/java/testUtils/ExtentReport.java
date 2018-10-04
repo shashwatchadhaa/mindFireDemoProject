@@ -53,6 +53,7 @@ public class ExtentReport {
 	public static void logInReport(Status status,String description)
 	{
 		getTest().log(status, description);
+		
 	}
 	
 	

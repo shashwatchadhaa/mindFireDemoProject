@@ -3,24 +3,28 @@ package testUtils;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 
 import com.aventstack.extentreports.Status;
 
 import baseSetup.DriverManager;
 
-public class Utility {
+public class Utility extends DriverManager {
 
 	
 	
@@ -30,7 +34,7 @@ public class Utility {
 	public static void clickElement(By locator,String name)
 	{
 		
-		DriverManager.getDriver().findElement(locator).click();
+		getDriver().findElement(locator).click();
 		if(name!="")
 		ExtentReport.logInReport(Status.INFO, "Clicked on : <b>"+name+"</b>");
 	
@@ -52,12 +56,40 @@ public class Utility {
 	}
 	
 	
+	public static List<WebElement> getElements(By locator)
+	{
+		return DriverManager.getDriver().findElements(locator);
+	}
 	
+	
+
+	
+	
+	public static WebElement getElement(By locator)
+	{
+		return DriverManager.getDriver().findElement(locator);
+	}
 	
     
 	
 	
-	
+	public static boolean isElementPresent(By locator)
+	{
+		try {
+			DriverManager.getDriver().manage().timeouts().implicitlyWait(1,TimeUnit.SECONDS);
+			
+		DriverManager.getDriver().findElement(locator);
+		return true;
+		}
+		catch(NoSuchElementException e)
+		{
+			return false;
+		}
+		finally {
+			DriverManager.getDriver().manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		}
+		
+	}
 	
 	public static void captureScreenShot()
 	{
@@ -78,13 +110,37 @@ public class Utility {
 	
 	
 
-	
+	public static void switchtoLatestWindow(String homeWindow)
+	{
+		Set<String> windowHandles=DriverManager.getDriver().getWindowHandles();
+		for(String window:windowHandles)
+		{
+			if(!window.equals(homeWindow))
+			DriverManager.getDriver().switchTo().window(window);
+		}
+		
+	}
 	
 
 	public static String getScreenShotPath() {
 		return screenShotPath;
 	}
 
+	
+	
+	public static String dateFormatter(String format,String date,String resultDate)
+	{
+		SimpleDateFormat dateFormat = new SimpleDateFormat(format);
+		SimpleDateFormat dateFormat2 = new SimpleDateFormat(resultDate);
+		String resultingDate="";
+		try {
+			resultingDate= dateFormat2.format(dateFormat.parse(date));
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return resultingDate;
+	}
 	
 	@DataProvider
 	public Object[][] getData(Method method) {

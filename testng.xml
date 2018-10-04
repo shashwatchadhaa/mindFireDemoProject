@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="methods" thread-count="2">
+<suite name="Suite" parallel="methods" thread-count="4">
 
   <test  name="Test">
-  <parameter name="browser" value="chrome"></parameter>
-  
-  
+  <parameter name="browser" value="chrome"></parameter>  
  
-  
-	
+      <parameter name="searchedItem" value="laptop bag"></parameter>
+	<parameter name="searchKeyword" value="charger"></parameter>
+	<parameter name="productAmazon" value="laptop"></parameter>
     <classes>
-       
-      
-     <class name="yahooTestCases.SignUpTestCases"/>
+ <class name="flipkartTestcases.ProductRatingTestCase"/>
+<!--  <class name="goalPlantestCases.GoalPlanDateFormatter"></class>
    
-    <class name="amazonTestCases.AddItemToCart"/>
+    <class name="flipkartTestcases.CompareCamera"/>
+    <class name="flipkartTestcases.HelpTOpics"/>
+    <class name="flipkartTestcases.HelpTOpics"/>
+    <class name="amazonTestCases.AmazonProductRating"/> -->
+
+    
+    
     
     </classes>
   </test> <!-- Test -->
